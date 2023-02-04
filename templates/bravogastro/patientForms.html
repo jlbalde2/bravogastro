@@ -1,0 +1,135 @@
+{% extends "../base.html" %}
+    
+{% load static %}
+{% block title %} PATIENT FORMS {% endblock %}
+
+{% block content %}
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    .column {
+      float:right;
+      padding: 10px;
+  
+    }
+    
+    .left {
+      width: 25%;
+      background-color: #f5f4f4;
+      border-top: 1px solid #e1e1e1;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: rgb(225, 225, 225);
+      margin-bottom: none;
+      margin-top: 100px;
+    }
+    
+    .right {
+      width: 75%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+    <body>
+
+      <div class="d-block w-100">
+        <div class="jumbotron shadow p-3 mb-5 rounded" style="background-color:light; height: 100%; border-radius: 15px 0 15px; #light; font-size:35px; color:#01447b; margin:30px; padding:25px;">
+  <strong><p align="center">Thank you for being a patient of Bravo Gastroenterology. Prior to your appointment please fill out the new patient or existing patient forms, and bring them with you
+to your appointment. Arrive 30 minutes prior to your scheduled time to ensure all paperwork is complete before your appointment. Addionally, please bring your photo ID,
+insurance card(s), a referral issued by your primary care physician (if required by your insurance), and any test or medical results that pertain to your visit. 
+We look forward to seeing you!</p></strong>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="column right" style="background-color:white;">
+<h1 class="entry-title" align="center">Patient Forms</h1>
+<hr class="featurette-divider">
+    <h2>English<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+      <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+      <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+    </svg></h2>
+    <div class="wp-block-file">
+      <a target="_blank" style="text-decoration:none" href="Patient-Registration-Form.pdf">Patient Registration Form</a>
+        <a href="Patient-Registration-Form.pdf" class="wp-block-file__button" download="">Download</a></div><div class="wp-block-file">
+
+      <a target="_blank" style="text-decoration:none" href="Patient-Information-Update.pdf">Patient Information Update </a>
+            <a href="Patient-Information-Update.pdf" class="wp-block-file__button" download="">Download</a></div><div class="wp-block-file">
+                <a target="_blank" style="text-decoration:none" href="HIPPA.pdf">HIPPA Privacy Policy </a>
+                <a href="HIPPA.pdf" class="wp-block-file__button" download="">Download</a>
+                <br />
+                <br />
+            </div><h2>Español <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+              <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+            </svg></h2>
+    <div class="wp-block-file">
+        <a target="_blank" style="text-decoration:none" href="Registro-de-Pacientes.pdf">Registro de Pacientes </a>
+        <a href="Registro-de-Pacientes.pdf" class="wp-block-file__button" download="">Descargar</a></div><div class="wp-block-file">
+            <a target="_blank" style="text-decoration:none" href="Aviso-del-paciente-sobre-las-prácticas-de-privacidad.pdf">Aviso del paciente sobre las prácticas de privacidad </a>
+            <a href="Aviso-del-paciente-sobre-las-prácticas-de-privacidad.pdf" class="wp-block-file__button" download="">Descargar</a></div>
+        <br />
+            <div id="uptodatesearchcontainer" style="padding: 6px; width: 166px; line-height: 14px; font-family: helvetica; font-size: 11px; background-color: #ffffff; text-align: left;">
+    <div style="width:166px;height:152px;background:url(https://www.uptodate.com/images/utd_widget_3.png) no-repeat;" title="UpToDate"> 
+        <a style="text-decoration:none" href="https://www.uptodate.com" id="benHome" target="_blank" style="display:block;width:115px;height:28px;position:relative;top:15px;left:10px;text-decoration:none;" rel="noopener noreferrer">&nbsp;</a> 
+        <a style="text-decoration:none" href="https://www.uptodate.com/home/uptodate-benefits-patients" id="benPatients" target="_blank" style="display:block;width:48px;height:13px;position:relative;top:58px;left:84px;text-decoration:none;" rel="noopener noreferrer">&nbsp;</a> 
+        <fieldset id="searchFS" style="margin: 0; padding: 0; display: block; width: 158px; height: 18px; position:relative; top:81px; left:6px; border: none;"> 
+            <label for="txtSearch" style="float: left; text-indent: -999em; height: 0px;"></label> 
+            <input id="txtSearch" type="text" name="search" autocomplete="off" placeholder="Search UpToDate" style="width:118px; height:14px; font-size: 10px; line-height:11px; color: black; float: left; margin: 1px 0 0 3px; border: none; background-color: #E4F3D8; -webkit-appearance: none; outline: none;" onkeydown="javascript:if((event.keyCode == 13) &amp;&amp; (document.getElementById('txtSearch').value != ''))uptodate.doSearch(false);"> 
+            <span id="utd_widget_submit" style="width: 21px; height: 18px; position:absolute; top:-2px; right:6px; float: right; cursor: pointer; text-indent: -98765px;" onfocus="uptodate.clearSearchText();" onblur="uptodate.clearSearchText();" onclick="javascript:if(document.getElementById('txtSearch').value !='')uptodate.doSearch(false);" title="Search">Go</span> 
+            <input type="hidden" id="widgetClientId" name="widgetClientId" value="4158773E87B46B4A"> </fieldset></div>
+            <input type="hidden" id="clientId" name="clientId" value="4158773E87B46B4A">
+    <input type="hidden" id="utdSource" name="source" value="PATIENT_SEARCHBOX">
+    <input type="hidden" id="_REFERER" name="referer" value="https://bravogastro.com/patient-forms">
+    <input type="hidden" id="_CAMPAIGN" name="utm_campaign" value="widget1">
+    <input type="hidden" id="_MEDIUM" name="utm_medium" value="widget">
+    <input type="hidden" id="_SOURCE" name="utm_source" value="widget"> 
+    <input type="hidden" id="searchUrlBase" value="https://www.uptodate.com/patients/contents/search"></div><p>
+      <a href="https://fiorehandandwrist.com/about-us/"></a></p>
+    <p></p>
+    <pre class="wp-block-preformatted"></pre>
+    <p>  </p>
+    <p>  </p>
+    <p>   <br>Dr. Arturo Bravo is a digestive disease specialist trained in the most advanced endoscopic techniques. He is a diplomat of the <a style="text-decoration:none" href="https://www.abim.org/verify-physician/Bravo-Arturo-pu5LqCDiQOg=.aspx">American Board of Gastroenterology</a>, the&nbsp;<a style="text-decoration:none" href="https://www.abim.org/verify-physician/Bravo-Arturo-pu5LqCDiQOg=.aspx">American Board of Transplant Hepatology</a>&nbsp;and the&nbsp;
+      <a style="text-decoration:none" href="https://www.abim.org/verify-physician/Bravo-Arturo-pu5LqCDiQOg=.aspx">American Board of Internal Medicine.</a> For more information on treatment options, or to schedule a consultation, call us at 
+        <a href="tel://+2819706027%E2%80%B3">281.970.6027</a>.  </p>
+    <p>We are conveniently located within driving distance of Cypress TX, Katy TX, Spring TX, Tomball TX, The Woodlands TX, and Houston TX. </p>
+</div>
+<div class="column left col-xs-7 col-sm-6 col-lg-6" align="center">
+    <br /><br />
+    <br /><br />
+    <div id="sidebar">
+      <div class="textwidget">
+        <strong><p>Hours of Operation</p></strong>
+        <p>Monday – Friday: 8 a.m.-5 p.m.<br> Saturday-Sunday: Closed</p> 
+        <p>&nbsp;</p> 
+        <p><strong>Arturo A. Bravo, MD</strong></p> 
+        <p>16700 House & Hahl Rd</p> 
+        <p>Building 3</p>
+        <p>Cypress, TX 77433</p> 
+        <p><a href="tel:2819706027">P:(281) 970-6027</a></p> 
+        <p>F:(281) 970-6805</p> <p>&nbsp;</p> 
+        <p><a style="text-decoration:none;" href="/patientForms">New Patient Forms</a></p> 
+        <p><a style="text-decoration:none;" href="https://www.google.com/maps/dir//''/@29.9292577,-95.6251579,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8640d111a34ee28b:0x25c698e7b40246f2!2m2!1d-95.5901383!2d29.9291879">Driving Directions</a></p> 
+        <p>&nbsp;</p></div><a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners">
+          <img src="/media/HOME_files/livingwinner2018.jpeg" width="100" height="100" class="image wp-image-166 attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;"></a>
+        </div>
+    
+</div>
+</div>
+
+
+</body>
+<br />
+<br />
+{% endblock %}
