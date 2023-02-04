@@ -1,2 +1,2 @@
 # bravogastro
-Dr. Bravo Gastroenterology
+Dr. Arturo Bravo Gastroenterology
