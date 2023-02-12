@@ -24,6 +24,9 @@
     
     .left {
       width: 40%;
+    margin-bottom: none;
+    margin-top: 100px;
+      
     }
     
     .right {
@@ -44,7 +47,7 @@
     <body>
     <div class="container">
       <div class="jumbotron shadow p-3 mb-5 rounded" style="background-color: #D8D5CF; padding:15px; ">
-        <div class="row" style="margin-left: 100px; margin-right: 80px;">
+        <div class="row">
         <div align="center" class="col-xs-5 col-sm-2 col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
@@ -82,46 +85,45 @@
 </div>
 <br />
 <br />
+</div>
 <hr class="dashed" style="color: #14549c; height:3px">
-
-    
-    <div class="row">
-        <div class="column right col-xs-7 col-sm-6 col-lg-6" style="background-color:white;" align="center">        <br />
-        
-        <br />
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6637582547214!2d-95.71175018448493!3d29.960348829494457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5e9f81eb11d%3A0x4b1e27fa8fe0dee8!2s16700%20House%20%26%20Hahl%20Rd%2C%20Cypress%2C%20TX%2077433!5e0!3m2!1sen!2sus!4v1668499335459!5m2!1sen!2sus" 
-        width="420" 
-        height="530" 
-        style="border:0;"
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe> 
-<br />
-<br />
-  <p style="color:black"><strong>
-      16700 House & Hahl Rd, Building 3, Cypress, TX 77433
-  </strong> </p>
-          <p style="color:black">We are conveniently located within driving distance of Cypress TX, Katy TX, Spring TX, Tomball TX, The Woodlands TX, and Houston TX. </p>  <br />
-        </div>
-            <div class="column left col-xs-7 col-sm-6 col-lg-6">
-                <div id="sidebar">
-    <br>
-    <br />
-                    
-  <video width="450" height="700" controls="controls" autoplay muted/>
+<div class="container">
+  <div class="row">
+      <div class="column right" style="background-color:white;">
+        <br /><br />
+        <br /><br />
+          <h4 align="center">Click to Open in Maps</h4>
+            <iframe style="align:center;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6637582547214!2d-95.71175018448493!3d29.960348829494457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d5e9f81eb11d%3A0x4b1e27fa8fe0dee8!2s16700%20House%20%26%20Hahl%20Rd%2C%20Cypress%2C%20TX%2077433!5e0!3m2!1sen!2sus!4v1668499335459!5m2!1sen!2sus" 
+            width="100%"
+            height="auto"
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p align="center" style="color:black text-align:center;"><strong>
+              16700 House & Hahl Rd, Building 3, Cypress, TX 77433
+          </strong> </p>
+                  <p align="center" style="color:black">We are conveniently located within driving distance of Cypress TX, Katy TX, Spring TX, Tomball TX, The Woodlands TX, and Houston TX. </p>  <br />
+  </div>
+  
+  <div class="column left" align="center">
+      <div id="sidebar">
+        <div class="textwidget">
+          <h4>Driving Directions</h4> 
+          <video width="100%" controls autoplay muted/>
     <source src="/media/DrivingDirections.mp4" type="video/mp4">
   </video>
           </div>
-    </div>
-<br /> 
-<br />
-</div> 
-<br />
-<br />
-<h2  align="center" style="text-decoration:underline;">OUR NEW OFFICE LOCATION IS NOW OPEN!</2>
-<p></p>
-<div align="center" class="innerbanner"> <img src="/media/contact_files/frontBuilding.jpg" style="height:600px; width:1100px; box-shadow: 10px 10px 5px #01447b" class="img-fluid rounded-4 shadow-4" alt=""></div>
+          <div class="clear">
+        </div>
 </div>
+</div>
+
+<div align="center" class="innerbanner"> <img src="/media/contact_files/frontBuilding.jpg" height="100%" width="100%" style="box-shadow: 10px 10px 5px #01447b" alt=""></div>
+</div>
+</div>
+<br /><br />
+      <br /><br />
+
 {% endblock %}
