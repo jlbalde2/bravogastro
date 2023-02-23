@@ -63,19 +63,19 @@ def areas_of_expertise(request):
     return render(request, "bravogastro/areasOfExpertise.html")
 
 def patient_information_update(request):
-    return FileResponse(open("templates/patientForms/Patient-Information-Update.pdf", 'rb'), content_type='application/pdf')
+    return FileResponse(open("media/patientForms/Patient-Information-Update.pdf", 'rb'), content_type='application/pdf')
 
 def patient_registration_Form(request):
-    return FileResponse(open("templates/patientForms/Patient-Registration-Form.pdf", 'rb'), content_type='application/pdf')
+    return FileResponse(open("media/patientForms/Patient-Registration-Form.pdf", 'rb'), content_type='application/pdf')
 
 def hippa(request):
-    return FileResponse(open("templates/patientForms/HIPPA.pdf", 'rb'), content_type='application/pdf')
+    return FileResponse(open("media/patientForms/HIPPA.pdf", 'rb'), content_type='application/pdf')
 
 def registro_de_pacientes(request):
-    return FileResponse(open("templates/patientForms/Registro-de-Pacientes.pdf", 'rb'), content_type='application/pdf')
+    return FileResponse(open("media/patientForms/Registro-de-Pacientes.pdf", 'rb'), content_type='application/pdf')
 
 def aviso_del_paciente(request):
-    return FileResponse(open("templates/patientForms/Aviso-del-paciente-sobre-las-prácticas-de-privacidad.pdf", 'rb'), content_type='application/pdf')
+    return FileResponse(open("media/patientForms/Aviso-del-paciente-sobre-las-prácticas-de-privacidad.pdf", 'rb'), content_type='application/pdf')
 
 # Areas of Expertise
 def abdominal_pain(request):
