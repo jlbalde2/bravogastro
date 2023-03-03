@@ -38,9 +38,6 @@ def staff_edgarOlivares(request):
 def staff_litzyGonzalez(request):
     return render(request, "staff/litzyGonzalez.html")
 
-def staff_nellyEsparza(request):
-    return render(request, "staff/nellyEsparza.html")
-
 def staff_stephanieBenitez(request):
     return render(request, "staff/stephanieBenitez.html")
 
