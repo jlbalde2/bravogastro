@@ -4,7 +4,7 @@
 {% block title %} ABOUT DR. BRAVO {% endblock %}
 
 {% block content %}
-    <div align="center" class="innerbanner"> <img src="/media/HOME_files/MainBanner.png" height="100%" width="100%" alt=""></div>
+    <div align="center" class="innerbanner"> <img src="{% static 'HOME_files/MainBanner.png' %}" height="100%" width="100%" alt=""></div>
 <br />
 
 <style> 
@@ -53,7 +53,7 @@
   <p>At doctor Bravo's office every patient is our main priority. If you are suffering from any of these problems, we encourage you to take care of you health, start by contacting a physician. </p>
 
         <video style="border:0px;" width="100%" height="650" controls='controls' autoplay muted>
-          <source src="/media/about_files/DrBravo_1.mp4" type="video/mp4">
+          <source src="{% static 'about_files/DrBravo_1.mp4' %}" type="video/mp4">
         </video>
         <br /><br />
   <p>With over a decade experience as a digestive disease specialist trained in the most advanced endoscopic techniques, Dr. Bravo treats a 
@@ -90,8 +90,9 @@
             <br><a style="text-decoration:none" href="/patientForms">New Patient Forms</a>
             <br><a style="text-decoration:none" href="https://www.google.com/maps/dir//''/@29.9292577,-95.6251579,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8640d111a34ee28b:0x25c698e7b40246f2!2m2!1d-95.5901383!2d29.9291879">Driving Directions</a></p> 
             <p>&nbsp;</p>
-          </div><a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners">
-              <img src="/media/about_files/livingwinner2018.jpeg" width="100" height="100" class="image wp-image-166 attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;"></a>
+          </div>
+          <a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners">
+              <img src="{% static 'about_files/livingwinner2018.jpeg' %}" width="100" height="100" class="image wp-image-166 attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;"></a>
             </div>
           </div>
   
@@ -110,7 +111,7 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
 <div class="row" align="center">
   <div align="center" class="col-md-4">
     <a href="https://giquic.org/" target="_blank">
-      <img height="85px" width="280px" src="/media/about_files/GIQuIC.png" /></a>
+      <img height="85px" width="280px" src="{% static 'about_files/GIQuIC.png' %}" /></a>
   </div>
 </div>
 <hr class="rounded" style="width:350px; color:#1D1400; height:6px;"  class="featurette-divider">
@@ -122,18 +123,18 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
 <div class="row">
 <div class="col-md-4">
   <a href="https://www.bidmc.org/" target="_blank">
-  <img height="85px" width="280px" src="/media/about_files/BethIsrael.png">
+  <img height="85px" width="280px" src="{% static 'about_files/BethIsrael.png' %}">
   </a>
   <br /><br />
 </div>
   <div class="col-md-4">
     <a href="https://hms.harvard.edu/departments/department-medicine" target="_blank">
-  <img height="85px" width="280px" src="/media/about_files/HarvardMedicine.png"></a>
+  <img height="85px" width="280px" src="{% static 'about_files/HarvardMedicine.png' %}"></a>
   <br /><br />
 </div>
   <div class="col-md-4">
     <a href="https://www.henryford.com/locations/henry-ford-hospital" target="_blank">
-  <img height="85px" width="280px" src="/media/about_files/HenryFord.png"></a>
+  <img height="85px" width="280px" src="{% static 'about_files/HenryFord.png' %}"></a>
 </div>
 </div>
 
@@ -146,17 +147,17 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
 <div class="row">
 <div align="center" class="col-md-4">
   <a href="https://www.nejm.org/" target="_blank">
-<img height="85px" width="280px" src="/media/about_files/NewEnglandPublish.png"></a>
+<img height="85px" width="280px" src="{% static 'about_files/NewEnglandPublish.png' %}"></a>
 <br /><br />
 </div>
 <div class="col-md-4">
   <a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners" target="_blank">
-<img height="95px" width="95px" src="/media/about_files/livingwinner2018.jpeg"></a>
+<img height="95px" width="95px" src="{% static 'about_files/livingwinner2018.jpeg' %}"></a>
 <br /><br />
 </div>
 <div class="col-md-4">
   <a href="https://www.wolterskluwer.com/en/solutions/uptodate" target="_blank">
-<img height="100px" width="100px" src="/media/about_files/upToDate.png"></a>
+<img height="100px" width="100px" src="{% static 'about_files/upToDate.png' %}"></a>
 <br /><br />
 </div>
 </div>
@@ -166,7 +167,7 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
   Additionally, Dr.Bravo counts with multiple memberships such as: </p></strong><br />
   <div class="row" style="margin-bottom:15px;">
   <div class="col-md-3">
-<a href="https://giquic.org/" height="85px" width="280px" target="_blank"><img  height="85px" width="280px" src="/media/about_files/ACoG.png" /></a>
+<a href="https://giquic.org/" height="85px" width="280px" target="_blank"><img  height="85px" width="280px" src="{% static 'about_files/ACoG.png' %}" /></a>
 <br /><br />
 </div>
 
@@ -175,27 +176,27 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
 <br /><br />
 </div>
 <div class="col-md-3">
-  <a href="https://www.asge.org/" target="_blank"><img height="85px" width="200px" src="/media/about_files/ASGE.jpeg" /></a>
+  <a href="https://www.asge.org/" target="_blank"><img height="85px" width="200px" src="{% static 'about_files/ASGE.jpeg' %}" /></a>
 <br /><br />
   </div>
 
   <div class="col-md-3">
-    <a href="https://www.aasld.org" target="_blank"><img height="85px" width="280px" src="/media/about_files/AASLD.jpeg" /></a>
+    <a href="https://www.aasld.org" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/AASLD.jpeg' %}" /></a>
     <br /><br />
     </div>
   </div>
     <div class="row">
     <div class="col-md-3">
-      <a href="https://www.texmed.org/" target="_blank"><img height="85px" width="280px" src="/media/about_files/TexasMedicalAssociation.jpeg" /></a>
+      <a href="https://www.texmed.org/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/TexasMedicalAssociation.jpeg' %}" /></a>
       <br /><br />
       </div>
       <div class="col-md-3">
-        <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="/media/about_files/HCMS.jpeg" /></a>
+        <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/HCMS.jpeg' %}" /></a>
         <br /><br />
         </div>
 
         <div class="col-md-3">
-          <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="/media/about_files/TSGE.jpeg" /></a>
+          <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/TSGE.jpeg' %}" /></a>
           <br /><br />
           </div>
 </div>

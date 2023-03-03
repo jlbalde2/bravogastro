@@ -51,7 +51,7 @@ clear: both;
         margin-left: auto;
         margin-right: auto;
         width: 23%;" 
-        width="213" align="left" height="300" src="/media/HOME_files/LittzyTwo.jpg" class="alignleft wp-post-image" alt="" sizes="(max-width: 213px) 100vw, 213px">
+        width="213" align="left" height="300" src="{% static 'HOME_files/LittzyTwo.jpg' %}" class="alignleft wp-post-image" alt="" sizes="(max-width: 213px) 100vw, 213px">
     </div>
     <br>
     <br>
@@ -61,15 +61,19 @@ clear: both;
 
         </p>
     </div>
-    <div class="column left" style="background-color:white;">
+    <div class="column left" align="center" style="background-color:white;">
             <br /><br />
         <br /><br />
             <div id="sidebar">
-        <div class="textwidget"><p><strong>Hours of Operation</strong></p> <p>Monday – Friday: 8 a.m.-5 p.m.<br> Saturday-Sunday: Closed</p> <p>&nbsp;</p> <p><strong>Arturo A. Bravo, MD</strong></p> <p><strong>11307 FM 1960 West Suite 370</strong></p> <p><strong>Houston, TX 77065</strong></p> <p><a href="tel:2819706027"><strong>P:(281) 970-6027</strong></a></p> <p><strong>F:(281) 970-6805</strong></p> 
+        <div class="textwidget"><p><strong><p>Hours of Operation</p></strong>
+          Monday – Friday
+          <br>8 a.m. - 5 p.m.
+            <br> Saturday-Sunday: Closed
+          <p>&nbsp;</p>  <p><strong>Arturo A. Bravo, MD</strong></p> <p><strong>11307 FM 1960 West Suite 370</strong></p> <p><strong>Houston, TX 77065</strong></p> <p><a href="tel:2819706027"><strong>P:(281) 970-6027</strong></a></p> <p><strong>F:(281) 970-6805</strong></p> 
         <p>&nbsp;</p> <p><a href="/patientForms">New Patient Form</a></p> 
         <p><a href="https://www.google.com/maps/dir//''/@29.9292577,-95.6251579,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8640d111a34ee28b:0x25c698e7b40246f2!2m2!1d-95.5901383!2d29.9291879">Driving Directions</a></p> 
         <p>&nbsp;</p></div><a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners">
-            <img src="../../media/HOME_files/livingwinner2018.jpeg" width="100" height="100" class="image wp-image-166 attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;"></a></div>
+            <img src="{% static 'HOME_files/livingwinner2018.jpeg' %}" width="100" height="100" class="image wp-image-166 attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;"></a></div>
             <div class="clear">
 
             </div>
