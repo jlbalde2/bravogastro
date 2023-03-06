@@ -4,7 +4,7 @@
 {% block title %} INSURANCE {% endblock %}
 
 {% block content %}
-<div align="center" class="innerbanner"> <img src="/media/HOME_files/MainBanner.png" height="100%" width="100%" alt=""></div>
+<div align="center" class="innerbanner"> <img src="{% static 'HOME_files/MainBanner.png' %}" height="100%" width="100%" alt=""></div>
 <br />
 <style>
     * {
@@ -27,6 +27,7 @@
     border-top-color: rgb(225, 225, 225);
     margin-bottom: none;
     margin-top: 100px;
+    height: 100%;
     }
     
     .right {
@@ -50,7 +51,7 @@
         <a style="text-decoration:none" href="/contactUs">Contact us</a>&nbsp;or <a style="text-decoration:none" href="tel://+2819706027%E2%80%B3">
            Call.
       </a></p> 
-      <table class="wp-block-table" style="border-spacing:100px; border-collapse: separate;"><tbody><tr><td>
+      <table class="wp-block-table" style="border-spacing:40px; border-collapse: separate;"><tbody><tr><td>
             <a target="_blank" style="text-decoration:none" href="https://www.aetna.com/"><strong>Aetna, <br>HMO,PPO</strong></a><br>
             <a target="_blank" style="text-decoration:none" href="https://www.bcbs.com/">
         <strong>BCBS HMO,PPO</strong></a><br>
