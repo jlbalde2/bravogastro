@@ -7,6 +7,7 @@
     <title>{% block title %}Bravo Gastro{% endblock %}</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> {% endcomment %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -26,6 +27,53 @@
   .div {
     display:block;
   }
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+{% comment %} .mobile-container {
+  max-width: 180px;
+  margin: auto;
+  background-color: #555;
+  height: 1200px;
+  color: white;
+  border-radius: 0px;
+}
+.topnav {
+  overflow: hidden;
+
+  position: sticky;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}  {% endcomment %}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
   .dropbtn {
     background-color:red;
     color: white;
@@ -44,13 +92,10 @@ nav ul {
 
 /* Hide the link that should open and close the topnav on small screens */
 .dropdown-content .icon {
-  display: none;
+  display: ;
 }
 
-  @media screen and (max-width: 767px)
-.header-top .right {
-    text-align: center;
-}
+
   .sticky {
     position: fixed;
     z-index: 1;
@@ -66,7 +111,7 @@ nav ul {
   }
 .navbar {
   background: transparent;
-  max-height: 100%;
+  max-height: ;
 }
   
   .dropdown {
@@ -91,39 +136,39 @@ nav ul {
     position: relative;
     display: inline-block;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(192,192,192,0.3);
+  z-index: 1;
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(192,192,192,0.3);
-    z-index: 1;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  z-index: 1
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #01447b; 
+  color:white;
+  border-radius: 15px 0 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
   
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #01447b; 
-    color:white;
-    border-radius: 15px 0 15px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    
-  }
+}
   .button3:hover .dropbtn {background-color: grey; color:black;}
   .mobile-container {
-    max-width: 480px;
+    max-width: 980px;
     margin: auto;
     background-color: white;
-    height: 500px;
+    height: 1000px;
     color: white;
     border-radius: 10px;
   }
@@ -172,42 +217,32 @@ nav ul {
           </svg>&nbsp; Send E-Mail</h5></a></p>
       </nav>
 
-<nav class="navbar-toggler navbar-expand bg-white navbar-dark">
   <div class="container">
-    <div align="center" class="container">
+    <div class="mobile-container">
+    <div class="topnav">
       <a class="navbar-brand d-flex-inline" href="/">
           
         <img src="{% static 'LOGOFINAL.png' %}" height="100%" width="100%">
-
     </a>
-  </div>
-    <div class="navbar-header">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
+      <div id="myLinks">
         <ul class="nav justify-content-end" data-toggle="collapse">
           <li class="nav-item dropdown">
             
           <li class="pure-button button3">
             <a style="display:flex; padding-right:8px; padding-left:8px; justify-content: space-between; text-decoration:none; color:white; padding-top:0px;" href="/about"> ABOUT DR. BRAVO </a>
           </li>
-            
-            
-      
-      <li id="aboutDrBravo" class="pure-button button3">
+]      <li id="aboutDrBravo" class="pure-button button3">
         <span class="underline-on-hover">
           <a style="text-decoration:none; padding-right:8px; padding-left:8px; color:white; padding-top:0px;" href="/areasOfExpertise"> AREAS OF EXPERTISE </a></span>
       </li>
       <div  class="pure-button button3 dropdown">
         <a style="text-decoration:none; padding-right:8px; padding-left:8px; color:white; padding-top:0px;" href="/services"> OUR PROCEDURES </a>
         <div  class="dropdown-content">
-          <a href="/services/bravopHMonitoring"> Bravo pH Monitoring System </a>
-          <a href="/services/colonoscopy"> Colonoscopy </a>
-          <a href="/services/upperEndoscopy">Upper Endoscopy</a>
-          <a href="/services/ercp">Endoscopic Retrograde Cholangiopancreatography</a>
-          <a href="/services/pillCam">PillCam SB Video Capsule</a>
+          <a style="text-decoration:none;" href="/services/bravopHMonitoring"> Bravo pH Monitoring System </a>
+          <a style="text-decoration:none;" href="/services/colonoscopy"> Colonoscopy </a>
+          <a style="text-decoration:none;" href="/services/upperEndoscopy">Upper Endoscopy</a>
+          <a style="text-decoration:none;" href="/services/ercp">Endoscopic Retrograde Cholangiopancreatography</a>
+          <a style="text-decoration:none;" href="/services/pillCam">PillCam SB Video Capsule</a>
         </div>
       </div>
       <li class="pure-button button3">
@@ -222,34 +257,22 @@ nav ul {
     </ul>
   </div>
 </div>
-    <script>
-      function myFunctionTwo() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+</div>
 
-    // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+<script>
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    navbar.classList.remove("sticky");
+    x.style.display = "block";
   }
 }
-
 </script>
   </div>
 </div>
