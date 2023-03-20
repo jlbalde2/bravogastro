@@ -20,7 +20,7 @@
   }
   
   .left {
-    width: 20%;
+    width: 22%;
     height: 100%;
     background-color: #f5f4f4;
     border-top-color: rgb(225, 225, 225);
@@ -32,7 +32,7 @@
   }
   
   .right {
-    width: 80%;
+    width: 78%;
   }
   
   /* Clear floats after the columns */
@@ -81,7 +81,7 @@
 <br />
         <div id="sidebar">
           <div class="textwidget">
-            <p><strong><p>Hours of Operation</p></strong>
+            <p><strong>Hours of Operation</p></strong>
             Monday – Friday
             <br>8 a.m. - 5 p.m.
               <br> Saturday-Sunday: Closed
@@ -114,7 +114,7 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
   According to the GIQuIC medical specialty registry, Dr. Bravo is the Gastroenterologist with the highest <a style="text-decoration:none" target="_blank" href="https://giquic.org/about/what-does-giquic-measure/"> ADR (Adenomaotous Detection Rate)</a> in the Northwest Houston Area.
 </strong></p>
 <div class="row" align="center">
-  <div align="center" class="col-md-4">
+  <div align="center" class="col-md-4 col-sm-4">
     <a href="https://giquic.org/" target="_blank">
       <img height="85px" width="280px" src="{% static 'about_files/GIQuIC.png' %}" /></a>
   </div>
@@ -125,21 +125,21 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
   Postdoctoral training at prestigious medical schools, such as:
   
 </p></strong>
-<div class="row">
-<div class="col-md-4">
+<div class="row" align="center">
+<div class="col-md-4 col-sm-4">
   <a href="https://www.bidmc.org/" target="_blank">
-  <img height="85px" width="280px" src="{% static 'about_files/BethIsrael.png' %}">
+  <img height="85px" width="100%" src="{% static 'about_files/BethIsrael.png' %}">
   </a>
   <br /><br />
 </div>
-  <div class="col-md-4">
+  <div class="col-md-4 col-sm-4">
     <a href="https://hms.harvard.edu/departments/department-medicine" target="_blank">
-  <img height="85px" width="280px" src="{% static 'about_files/HarvardMedicine.png' %}"></a>
+  <img height="85px" width="100%" src="{% static 'about_files/HarvardMedicine.png' %}"></a>
   <br /><br />
 </div>
-  <div class="col-md-4">
+  <div class="col-md-4 col-sm-4">
     <a href="https://www.henryford.com/locations/henry-ford-hospital" target="_blank">
-  <img height="85px" width="280px" src="{% static 'about_files/HenryFord.png' %}"></a>
+  <img height="85px" width="100%" src="{% static 'about_files/HenryFord.png' %}"></a>
 </div>
 </div>
 
@@ -150,19 +150,19 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
   Doctor Bravo has also been published in various health journals and magazines, including the following:
 </p></strong><br />
 <div class="row">
-<div align="center" class="col-md-4">
+<div align="center" class="col-md-4 col-sm-4">
   <a href="https://www.nejm.org/" target="_blank">
-<img height="85px" width="280px" src="{% static 'about_files/NewEnglandPublish.png' %}"></a>
+<img height="85px" width="90%" src="{% static 'about_files/NewEnglandPublish.png' %}"></a>
 <br /><br />
 </div>
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4">
   <a href="https://www.livingmagazine.net/the-2018-best-of-cy-fair-readers-choice-winners" target="_blank">
-<img height="95px" width="95px" src="{% static 'about_files/livingwinner2018.jpeg' %}"></a>
+<img height="95px" width="auto" src="{% static 'about_files/livingwinner2018.jpeg' %}"></a>
 <br /><br />
 </div>
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4">
   <a href="https://www.wolterskluwer.com/en/solutions/uptodate" target="_blank">
-<img height="100px" width="100px" src="{% static 'about_files/upToDate.png' %}"></a>
+<img height="100px" width="auto" src="{% static 'about_files/upToDate.png' %}"></a>
 <br /><br />
 </div>
 </div>
@@ -171,37 +171,38 @@ padding: 1px; padding-top:15px; padding-bottom:15px; width:100%; height:auto;">
 <strong><p style="margin-top:40px;">
   Additionally, Dr.Bravo counts with multiple memberships such as: </p></strong><br />
   <div class="row" style="margin-bottom:15px;">
-  <div class="col-md-3">
-<a href="https://giquic.org/" height="85px" width="280px" target="_blank"><img  height="85px" width="280px" src="{% static 'about_files/ACoG.png' %}" /></a>
+  <div class="col-md-3 col-sm-3">
+<a href="https://giquic.org/" height="85px" width="100%" target="_blank"><img  height="85px" width="100%" src="{% static 'about_files/ACoG.png' %}" /></a>
 <br /><br />
 </div>
 
-<div class="col-md-3">
-<a href="https://gastro.org" target="_blank"><img height="85px" width="280px" src="https://seekvectorlogo.com/wp-content/uploads/2019/03/american-gastroenterological-association-aga-vector-logo.png" /></a>
+<div class="col-md-3 col-sm-3">
+<a href="https://gastro.org" target="_blank"><img height="85px" width="100%" src="https://seekvectorlogo.com/wp-content/uploads/2019/03/american-gastroenterological-association-aga-vector-logo.png" /></a>
 <br /><br />
 </div>
-<div class="col-md-3">
-  <a href="https://www.asge.org/" target="_blank"><img height="85px" width="200px" src="{% static 'about_files/ASGE.jpeg' %}" /></a>
+
+<div class="col-md-3 col-sm-3">
+  <a href="https://www.asge.org/" target="_blank"><img height="85px" width="100%" src="{% static 'about_files/ASGE.jpeg' %}" /></a>
 <br /><br />
   </div>
 
   <div class="col-md-3">
-    <a href="https://www.aasld.org" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/AASLD.jpeg' %}" /></a>
+    <a href="https://www.aasld.org" target="_blank"><img height="85px" width="100%" src="{% static 'about_files/AASLD.jpeg' %}" /></a>
     <br /><br />
     </div>
   </div>
     <div class="row">
-    <div class="col-md-3">
-      <a href="https://www.texmed.org/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/TexasMedicalAssociation.jpeg' %}" /></a>
+    <div class="col-md-3 col-sm-3">
+      <a href="https://www.texmed.org/" target="_blank"><img height="85px" width="100%" src="{% static 'about_files/TexasMedicalAssociation.jpeg' %}" /></a>
       <br /><br />
       </div>
       <div class="col-md-3">
-        <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/HCMS.jpeg' %}" /></a>
+        <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="100%" src="{% static 'about_files/HCMS.jpeg' %}" /></a>
         <br /><br />
         </div>
 
         <div class="col-md-3">
-          <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="280px" src="{% static 'about_files/TSGE.jpeg' %}" /></a>
+          <a href="https://www.tsge.org/amsimis/" target="_blank"><img height="85px" width="100%" src="{% static 'about_files/TSGE.jpeg' %}" /></a>
           <br /><br />
           </div>
 </div>
